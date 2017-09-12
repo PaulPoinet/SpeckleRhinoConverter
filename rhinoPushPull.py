@@ -118,6 +118,8 @@ def Push():
                 
         myFile.close() 
 
+########################################################## PULL DATA        
+        
 def Pull():
     with open("mongoId.txt","r") as myFile:
         for line in myFile: # read all stored MongoIDs
@@ -181,6 +183,8 @@ def Pull():
             else: # The retrieved layer do not exist in active dot
                 # DO SOME STUFF!
                 pass
+            
+########################################################## EXECUTE
 
 Push()
 Pull()
